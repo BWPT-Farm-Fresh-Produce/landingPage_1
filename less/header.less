@@ -1,8 +1,30 @@
 
 header{
-    .dFlex(column, center, center);
+    .dFlex(row, flex-end, center);
     width: 100%;
     z-index: -1;
     height: 10%;
+    padding: 2%;
     background-color: @headerColor;
-}
+
+    nav{
+        // .dFlex(row, space-between, center);
+        width: 40%;
+
+        li{
+            .dFlex(row, space-around, center);
+
+            a{
+                text-decoration: none;
+                color: @aColor;
+
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+
+            }//end a
+
+        }//end li
+    } //end nav
+}//end header
