@@ -174,5 +174,12 @@ a {
   font-size: 1.5rem;
 }
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: -1;
+  height: 10%;
   background-color: #F0E9DF;
 }
