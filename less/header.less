@@ -1,0 +1,30 @@
+
+header{
+    .dFlex(row, flex-end, center);
+    width: 100%;
+    z-index: -1;
+    height: 10%;
+    padding: 2%;
+    background-color: @headerColor;
+
+    nav{
+        // .dFlex(row, space-between, center);
+        width: 50%;
+
+        li{
+            .dFlex(row, space-around, center);
+
+            a{
+                text-decoration: none;
+                color: @aColor;
+                padding: 1% 0;
+
+                &:hover{
+                    cursor: pointer;
+                    color: @orange;
+                    border-bottom: 1px dotted @orange;
+                }
+            }//end a
+        }//end li
+    } //end nav
+}//end header
