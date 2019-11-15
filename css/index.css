@@ -205,12 +205,12 @@ header nav a:hover {
   opacity: 0.8;
 }
 header nav ul {
-  width: 40%;
+  width: 30%;
 }
 header nav ul li {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 header nav ul li a {
@@ -221,8 +221,8 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   cursor: pointer;
-  color: #4E6A5B;
-  border-bottom: 1px dotted #4E6A5B;
+  color: #E8A62D;
+  border-bottom: 1px dotted #E8A62D;
 }
 .hero {
   display: flex;
@@ -278,6 +278,9 @@ header nav ul li a:hover {
   border-color: #AEAE70;
 }
 .howItWorks {
+  background-image: url(../assets/images/Farm-Fresh-Produce_large.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #4E6A5B;
   max-width: 100%;
   padding: 5% 0 0 0;
@@ -285,6 +288,8 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  border-bottom: 2px dashed #AEAE70;
+  border-top: 2px dashed #AEAE70;
 }
 .howItWorks h2 {
   width: 100%;
@@ -340,12 +345,14 @@ header nav ul li a:hover {
 }
 .team {
   width: 100%;
-  padding: 5% 0 0 0;
+  padding: 5% 0 5% 0;
+  border-bottom: 2px dashed #AEAE70;
 }
 .team h3 {
   width: 100%;
   text-align: center;
   margin: 0 0 5% 0;
+  color: #4E6A5B;
 }
 .team .teamCont {
   display: flex;
@@ -356,13 +363,15 @@ header nav ul li a:hover {
   align-items: baseline;
 }
 .team .teamCont .teamMember {
-  width: 33%;
+  width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 0 5% 0;
+  margin: 0 2% 5% 0;
+  padding-bottom: 1%;
+  border-bottom: 1px dashed #333;
 }
 .team .teamCont .teamMember .teamImage {
   width: 30%;
@@ -383,7 +392,10 @@ header nav ul li a:hover {
   margin: 0 0 2% 0;
 }
 footer {
-  cursor: pointer;
+  height: 10%;
+  text-align: center;
+  padding: 2%;
+  background-color: #333;
 }
 footer .copy {
   cursor: pointer;
