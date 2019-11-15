@@ -1,0 +1,150 @@
+.hero{
+    .dFlex(column, flex-start, center);
+    max-width: 100%;
+    height: 100vh;
+    padding: 5% 0 0 0;
+    background-image: url(../assets/images/hero4.png);
+    background-size: cover;
+    background-position: center;
+
+    .textCont1{
+        .dFlex(column, center, center);
+        width: 60%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        h2{
+            margin: 0 0 5% 0;
+        }
+    }//end textCont1
+
+    .btnCont{
+        .dFlex(row, center, center);
+        max-width: 100%;
+        width: 100%;
+        padding: 10% 0 0 0;
+
+        a{
+            .btn(@btnColor, @btnText);
+        }
+    }//end btnCont
+}//end hero section
+
+// ////////////////// how it works //////////////////////
+
+.howItWorks{
+    // background-image: url(../assets/images/hero2.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: @green1;
+    max-width: 100%; 
+    padding: 5% 0 0 0;
+    .dFlex(column, flex-start, center);
+
+    h2{
+        width: 100%;
+        padding: 0 0 3% 0;
+        text-align: center;
+
+    }
+
+    p{
+        width: 60%;
+        background-color: gray;
+        padding: 2%;
+        border: 1px solid @green3;
+        border-radius: 5px;
+        margin: 0 0 5% 0;
+    }
+
+    .choices{
+        width: 80%;
+        .dFlex(column, space-between, center);
+
+        .choice1{
+            .dFlex(row, space-between, center);
+            width: 100%;
+            margin: 0 0 10% 0;
+        }//end choice1
+
+        .choice2{
+            .dFlex(row-reverse, space-between, center);
+            width: 100%;
+            margin: 0 0 10% 0;
+        }//end choice2
+
+        img{
+            width: 45%;
+            border-radius: 5px;
+        }
+
+        .text{
+            width: 45%;
+            text-align: center;
+
+            h3{
+                width: 100%;
+                margin: 0 0 3% 0;
+            }
+
+            p{
+                width: 100%;
+                padding: 3%;
+            }
+        }//end text
+    }//end choices
+}//end howItWorks
+
+// /////////////////// team //////////////////////////
+
+.team{
+    width: 100%;
+    padding: 5% 0 0 0;
+
+    h3{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 5% 0;
+    }
+
+    .teamCont{
+        .dFlex(row, center, center);
+        flex-wrap: wrap;
+       align-items: baseline;
+
+        .teamMember{
+            width: 33%;
+            height: 100%;
+            .dFlex(column, flex-end, center);
+            margin: 0 0 5% 0;
+    
+            .teamImage{
+                width: 30%;
+                margin: 0 auto;
+    
+                img{
+                    width: 100%;
+                    align-items: baseline;
+                }
+            }//end teamImage
+    
+            .teamText{
+                text-align: center;
+                width: 90%;
+
+                p{
+                    color: @aColor;
+                }
+
+                h4{
+                    margin: 0 0 2% 0;
+                }
+
+            }//end teamText
+        }//end teamMember
+
+    }//end teamCont
+
+   
+}//end team

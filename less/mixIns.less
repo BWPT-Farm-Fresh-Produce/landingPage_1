@@ -4,3 +4,25 @@
     justify-content: @just;
     align-items: @align;
 }
+
+.btn(@bgcolor, @color){
+    padding: 2%;
+    margin: 0 2% 0 2%;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: @bgcolor;
+    color: @color;
+    font-size: @pSize;
+    display: block;
+    width: 15%;
+    text-align: center;
+    opacity: 0.8;
+
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+        border-color: @green3;
+    }
+
+}//end btn

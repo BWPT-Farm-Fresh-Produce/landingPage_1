@@ -8,23 +8,38 @@ header{
     background-color: @headerColor;
 
     nav{
-        // .dFlex(row, space-between, center);
-        width: 50%;
+        .dFlex(row, space-between, center);
+        width: 90%;
+        margin: 0 auto;
 
-        li{
-            .dFlex(row, space-around, center);
+        a{
+            text-decoration: none;
 
-            a{
-                text-decoration: none;
-                color: @aColor;
-                padding: 1% 0;
+            &:hover{
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
 
-                &:hover{
-                    cursor: pointer;
-                    color: @orange;
-                    border-bottom: 1px dotted @orange;
-                }
-            }//end a
-        }//end li
+        ul{
+            width: 40%;
+
+            li{
+                .dFlex(row, space-between, center);
+    
+                a{
+                    text-decoration: none;
+                    color: @aColor;
+                    padding: 1% 0;
+                    font-size: @aSize;
+    
+                    &:hover{
+                        cursor: pointer;
+                        color: @btnColor;
+                        border-bottom: 1px dotted @btnColor;
+                    }
+                }//end a
+            }//end li
+        }//end ul
     } //end nav
 }//end header
