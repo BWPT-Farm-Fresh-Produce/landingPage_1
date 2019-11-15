@@ -340,7 +340,7 @@ header nav ul li a:hover {
 }
 .team {
   width: 100%;
-  padding: 5% 0 0 0;
+  padding: 5% 0 5% 0;
 }
 .team h3 {
   width: 100%;
@@ -383,7 +383,10 @@ header nav ul li a:hover {
   margin: 0 0 2% 0;
 }
 footer {
-  cursor: pointer;
+  height: 10%;
+  text-align: center;
+  padding: 2%;
+  background-color: #333;
 }
 footer .copy {
   cursor: pointer;
