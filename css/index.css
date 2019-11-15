@@ -165,13 +165,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: #E8A62D;
   font-size: 3rem;
+  color: #E8A62D;
 }
-p,
-a {
-  color: #333;
-  font-size: 1.5rem;
+h1 {
+  color: #E8A62D;
+}
+h2 {
+  color: #E8A62D;
+}
+p {
+  color: #eee;
+  font-size: 1.6rem;
 }
 header {
   display: flex;
@@ -185,21 +190,201 @@ header {
   background-color: #F0E9DF;
 }
 header nav {
-  width: 50%;
-}
-header nav li {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+header nav ul {
+  width: 40%;
+}
+header nav ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
-header nav li a {
+header nav ul li a {
   text-decoration: none;
   color: #333;
   padding: 1% 0;
+  font-size: 1.4rem;
 }
-header nav li a:hover {
+header nav ul li a:hover {
   cursor: pointer;
-  color: #E8A62D;
-  border-bottom: 1px dotted #E8A62D;
+  color: #4E6A5B;
+  border-bottom: 1px dotted #4E6A5B;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  height: 100vh;
+  padding: 5% 0 0 0;
+  background-image: url(../assets/images/hero4.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero .textCont1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero .textCont1 h2 {
+  margin: 0 0 5% 0;
+}
+.hero .btnCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 10% 0 0 0;
+}
+.hero .btnCont a {
+  padding: 2%;
+  margin: 0 2% 0 2%;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: #4E6A5B;
+  color: white;
+  font-size: 1.6rem;
+  display: block;
+  width: 15%;
+  text-align: center;
+  opacity: 0.8;
+}
+.hero .btnCont a:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-color: #AEAE70;
+}
+.howItWorks {
+  background-color: #4E6A5B;
+  max-width: 100%;
+  padding: 5% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.howItWorks h2 {
+  width: 100%;
+  padding: 0 0 3% 0;
+  text-align: center;
+}
+.howItWorks p {
+  width: 60%;
+  background-color: gray;
+  padding: 2%;
+  border: 1px solid #AEAE70;
+  border-radius: 5px;
+  margin: 0 0 5% 0;
+}
+.howItWorks .choices {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.howItWorks .choices .choice1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 10% 0;
+}
+.howItWorks .choices .choice2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 10% 0;
+}
+.howItWorks .choices img {
+  width: 45%;
+  border-radius: 5px;
+}
+.howItWorks .choices .text {
+  width: 45%;
+  text-align: center;
+}
+.howItWorks .choices .text h3 {
+  width: 100%;
+  margin: 0 0 3% 0;
+}
+.howItWorks .choices .text p {
+  width: 100%;
+  padding: 3%;
+}
+.team {
+  width: 100%;
+  padding: 5% 0 0 0;
+}
+.team h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+.team .teamCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.team .teamCont .teamMember {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 5% 0;
+}
+.team .teamCont .teamMember .teamImage {
+  width: 30%;
+  margin: 0 auto;
+}
+.team .teamCont .teamMember .teamImage img {
+  width: 100%;
+  align-items: baseline;
+}
+.team .teamCont .teamMember .teamText {
+  text-align: center;
+  width: 90%;
+}
+.team .teamCont .teamMember .teamText p {
+  color: #333;
+}
+.team .teamCont .teamMember .teamText h4 {
+  margin: 0 0 2% 0;
+}
+footer {
+  cursor: pointer;
+}
+footer .copy {
+  cursor: pointer;
 }
