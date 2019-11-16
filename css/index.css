@@ -189,6 +189,12 @@ header {
   padding: 2%;
   background-color: #F0E9DF;
 }
+@media (max-width: 500px) {
+  header {
+    padding: 2% 0 3% 0;
+    height: 23%;
+  }
+}
 header nav {
   display: flex;
   flex-direction: row;
@@ -197,8 +203,31 @@ header nav {
   width: 90%;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  header nav {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
+}
 header nav a {
   text-decoration: none;
+}
+@media (max-width: 600px) {
+  header nav a {
+    margin: 0 0 1% 0;
+  }
 }
 header nav a:hover {
   cursor: pointer;
@@ -207,17 +236,50 @@ header nav a:hover {
 header nav ul {
   width: 30%;
 }
+@media (max-width: 800px) {
+  header nav ul {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  header nav ul {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  header nav ul {
+    width: 100%;
+  }
+}
 header nav ul li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #333;
   padding: 1% 0;
   font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  header nav ul li a {
+    background-color: #4E6A5B;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 2% 0;
+  }
 }
 header nav ul li a:hover {
   cursor: pointer;
@@ -246,6 +308,11 @@ header nav ul li a:hover {
   margin: 0 auto;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .hero .textCont1 {
+    width: 100%;
+  }
+}
 .hero .textCont1 h2 {
   margin: 0 0 5% 0;
 }
@@ -257,6 +324,14 @@ header nav ul li a:hover {
   max-width: 100%;
   width: 100%;
   padding: 10% 0 0 0;
+}
+@media (max-width: 500px) {
+  .hero .btnCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .hero .btnCont a {
   padding: 2%;
@@ -276,6 +351,19 @@ header nav ul li a:hover {
   opacity: 1;
   cursor: pointer;
   border-color: #AEAE70;
+}
+@media (max-width: 800px) {
+  .hero .btnCont a {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .hero .btnCont a {
+    margin-bottom: 3%;
+    width: 90%;
+    padding: 3%;
+    font-size: 1.9rem;
+  }
 }
 .howItWorks {
   background-image: url(../assets/images/Farm-Fresh-Produce_large.png);
@@ -304,12 +392,22 @@ header nav ul li a:hover {
   border-radius: 5px;
   margin: 0 0 5% 0;
 }
+@media (max-width: 800px) {
+  .howItWorks p {
+    width: 95%;
+  }
+}
 .howItWorks .choices {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .howItWorks .choices {
+    width: 100%;
+  }
 }
 .howItWorks .choices .choice1 {
   display: flex;
@@ -319,6 +417,14 @@ header nav ul li a:hover {
   width: 100%;
   margin: 0 0 10% 0;
 }
+@media (max-width: 800px) {
+  .howItWorks .choices .choice1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .howItWorks .choices .choice2 {
   display: flex;
   flex-direction: row-reverse;
@@ -327,13 +433,44 @@ header nav ul li a:hover {
   width: 100%;
   margin: 0 0 10% 0;
 }
+@media (max-width: 800px) {
+  .howItWorks .choices .choice2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .howItWorks .choices img {
   width: 45%;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px;
+}
+@media (max-width: 800px) {
+  .howItWorks .choices img {
+    width: 65%;
+    margin: 0 0 1% 0;
+  }
+}
+@media (max-width: 500px) {
+  .howItWorks .choices img {
+    display: none;
+  }
 }
 .howItWorks .choices .text {
   width: 45%;
+  max-width: 100%;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .howItWorks .choices .text {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .howItWorks .choices .text {
+    width: 100%;
+  }
 }
 .howItWorks .choices .text h3 {
   width: 100%;
@@ -354,6 +491,11 @@ header nav ul li a:hover {
   margin: 0 0 5% 0;
   color: #4E6A5B;
 }
+@media (max-width: 500px) {
+  .team h3 {
+    margin: 0 0 8% 0;
+  }
+}
 .team .teamCont {
   display: flex;
   flex-direction: row;
@@ -373,6 +515,21 @@ header nav ul li a:hover {
   padding-bottom: 1%;
   border-bottom: 1px dashed #333;
 }
+@media (max-width: 900px) {
+  .team .teamCont .teamMember {
+    width: 45%;
+  }
+}
+@media (max-width: 800px) {
+  .team .teamCont .teamMember {
+    width: 55%;
+  }
+}
+@media (max-width: 500px) {
+  .team .teamCont .teamMember {
+    margin: 0 0 10% 0;
+  }
+}
 .team .teamCont .teamMember .teamImage {
   width: 30%;
   margin: 0 auto;
@@ -380,6 +537,11 @@ header nav ul li a:hover {
 .team .teamCont .teamMember .teamImage img {
   width: 100%;
   align-items: baseline;
+}
+@media (max-width: 500px) {
+  .team .teamCont .teamMember .teamImage img {
+    display: none;
+  }
 }
 .team .teamCont .teamMember .teamText {
   text-align: center;
