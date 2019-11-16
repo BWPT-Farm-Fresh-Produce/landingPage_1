@@ -7,13 +7,34 @@ header{
     padding: 2%;
     background-color: @headerColor;
 
+    @media @mobile{
+        padding: 2% 0 3% 0;
+        height: 23%;
+    }
+
     nav{
         .dFlex(row, space-between, center);
         width: 90%;
         margin: 0 auto;
 
+        @media @tablet{
+            width: 100%;
+        }
+
+        @media @600{
+            .dFlex(column, space-between, center);
+        }
+
+        @media @mobile{
+            width: 100%;
+        }
+
         a{
             text-decoration: none;
+
+            @media @600{
+                margin: 0 0 1% 0;
+            }
 
             &:hover{
                 cursor: pointer;
@@ -24,14 +45,39 @@ header{
         ul{
             width: 30%;
 
+            @media @tablet{
+                width: 40%;
+            }
+
+            @media @600{
+                width: 70%;
+            }
+
+            @media @mobile{
+                width: 100%;
+            }
+
             li{
                 .dFlex(row, space-around, center);
+
+                @media @mobile{
+                    .dFlex(column, center, center); 
+                }
     
                 a{
                     text-decoration: none;
                     color: @aColor;
                     padding: 1% 0;
                     font-size: @aSize;
+
+                    @media @mobile{
+                        background-color: @green1;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        font-size: @aSize+0.5;
+                        padding: 2% 0;
+                    }
     
                     &:hover{
                         cursor: pointer;
