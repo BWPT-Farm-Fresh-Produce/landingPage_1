@@ -386,11 +386,11 @@ header nav ul li a:hover {
 }
 .howItWorks p {
   width: 60%;
-  background-color: gray;
   padding: 2%;
   border: 1px solid #AEAE70;
   border-radius: 5px;
   margin: 0 0 5% 0;
+  color: #4E6A5B;
 }
 @media (max-width: 800px) {
   .howItWorks p {
@@ -485,6 +485,8 @@ header nav ul li a:hover {
 .howItWorks .choices .text p {
   width: 100%;
   padding: 3%;
+  background-color: gray;
+  color: #eee;
 }
 .team {
   width: 100%;
