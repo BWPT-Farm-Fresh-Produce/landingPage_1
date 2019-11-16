@@ -397,6 +397,12 @@ header nav ul li a:hover {
     width: 95%;
   }
 }
+@media (max-width: 500px) {
+  .howItWorks p {
+    margin: 0 0 20% 0;
+    width: 100%;
+  }
+}
 .howItWorks .choices {
   width: 80%;
   display: flex;
@@ -493,7 +499,7 @@ header nav ul li a:hover {
 }
 @media (max-width: 500px) {
   .team h3 {
-    margin: 0 0 8% 0;
+    margin: 0 0 10% 0;
   }
 }
 .team .teamCont {
@@ -528,6 +534,7 @@ header nav ul li a:hover {
 @media (max-width: 500px) {
   .team .teamCont .teamMember {
     margin: 0 0 10% 0;
+    width: 100%;
   }
 }
 .team .teamCont .teamMember .teamImage {
@@ -561,4 +568,9 @@ footer {
 }
 footer .copy {
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  footer .copy {
+    margin-top: 2%;
+  }
 }
