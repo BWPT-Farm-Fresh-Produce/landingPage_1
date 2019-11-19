@@ -159,6 +159,9 @@ input,
 select {
   vertical-align: middle;
 }
+* {
+  font-family: 'Baskervville', serif;
+}
 h1,
 h2,
 h3,
@@ -487,6 +490,32 @@ header nav ul li a:hover {
   padding: 3%;
   background-color: gray;
   color: #eee;
+}
+@media (max-width: 500px) {
+  .about {
+    margin-top: 5%;
+  }
+}
+.about h3 {
+  width: 100%;
+  text-align: center;
+  margin: 5% 0 5% 0;
+  color: #4E6A5B;
+}
+@media (max-width: 500px) {
+  .about h3 {
+    margin: 0 0 10% 0;
+  }
+}
+.about .aboutText {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+.about .aboutText p {
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding: 0 0 5% 0;
 }
 .team {
   width: 100%;
