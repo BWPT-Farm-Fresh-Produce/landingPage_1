@@ -493,9 +493,10 @@ header nav ul li a:hover {
 }
 .about {
   background-image: url(../assets/images/aboutImage.jpg);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   padding: 5% 0;
+  border-bottom: 2px dashed #AEAE70;
 }
 @media (max-width: 500px) {
   .about {
@@ -505,8 +506,8 @@ header nav ul li a:hover {
 .about h3 {
   width: 100%;
   text-align: center;
-  margin: 5% 0 5% 0;
-  color: #4E6A5B;
+  margin: 0 0 5% 0;
+  color: #eee;
 }
 @media (max-width: 500px) {
   .about h3 {
@@ -515,11 +516,11 @@ header nav ul li a:hover {
 }
 .about .aboutText {
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   text-align: center;
 }
 .about .aboutText p {
-  color: #333;
+  color: #eee;
   border-bottom: 1px solid #eee;
   padding: 0 0 5% 0;
 }
@@ -556,7 +557,7 @@ header nav ul li a:hover {
   align-items: center;
   margin: 0 2% 5% 0;
   padding-bottom: 1%;
-  border-bottom: 1px dashed #333;
+  border-bottom: 1px dashed #AEAE70;
 }
 @media (max-width: 900px) {
   .team .teamCont .teamMember {

@@ -163,9 +163,10 @@
 .about{
 
     background-image: url(../assets/images/aboutImage.jpg);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     padding: 5% 0;
+    border-bottom: 2px dashed @green3;
 
     @media @mobile{
         margin-top: 5%;
@@ -174,8 +175,8 @@
     h3{
         width: 100%;
         text-align: center;
-        margin: 5% 0 5% 0;
-        color: @green1;
+        margin: 0 0 5% 0;
+        color: @pColor;
 
         @media @mobile{
             margin: 0 0 10% 0;
@@ -184,11 +185,11 @@
 
     .aboutText{
         margin: 0 auto;
-        width: 80%;
+        width: 70%;
         text-align: center;
 
         p{
-            color: @aColor;
+            color: @pColor;
             border-bottom: 1px solid #eee;
             padding: 0 0 5% 0;
         }
@@ -226,7 +227,7 @@
             .dFlex(column, flex-end, center);
             margin: 0 2% 5% 0;
             padding-bottom: 1%;
-            border-bottom: 1px dashed #333;
+            border-bottom: 1px dashed @green3;
 
             @media @900{
                 width: 45%;
