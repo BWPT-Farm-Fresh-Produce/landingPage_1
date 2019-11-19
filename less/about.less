@@ -1,0 +1,111 @@
+// /////////////////// about //////////////////////////
+
+.about{
+
+    background-image: url(../assets/images/aboutImage.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 5% 0 0 0;
+    border-bottom: 2px dashed @green3;
+
+    h3{
+        width: 100%;
+        text-align: center;
+        padding: 0 0 5% 0;
+        color: @pColor;
+
+        @media @mobile{
+            margin: 0 0 10% 0;
+        }
+    }//end h3
+
+    .aboutText{
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+
+        p{
+            color: @pColor;
+            border-bottom: 1px solid #eee;
+            padding: 0 0 5% 0;
+        }
+
+    }//end aboutText
+}//end about
+
+// /////////////////// team //////////////////////////
+
+.team{
+    width: 100%;
+    padding: 5% 0 5% 0;
+    border-bottom: 2px dashed @green3;
+
+    h3{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto 5% auto;
+        padding-bottom: 5%;
+        border-bottom: 1px solid #eee;
+        color: @green1;
+
+        @media @mobile{
+            margin: 0 auto 10% auto;
+        }
+    }//end h3
+
+    .teamCont{
+        .dFlex(row, center, center);
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        .teamMember{
+            width: 30%;
+            height: 100%;
+            .dFlex(column, flex-end, center);
+            margin: 0 2% 5% 0;
+            padding-bottom: 1%;
+            border-bottom: 1px dashed @green3;
+
+            @media @900{
+                width: 45%;
+            }
+
+            @media @tablet{
+                width: 55%;
+            }
+
+            @media @mobile{
+                margin: 0 0 10% 0;
+                width: 100%;
+            }
+    
+            .teamImage{
+                width: 30%;
+                margin: 0 auto;
+    
+                img{
+                    width: 100%;
+                    align-items: baseline;
+
+                    @media @mobile{
+                        display: none;
+                    }
+                }
+            }//end teamImage
+    
+            .teamText{
+                text-align: center;
+                width: 90%;
+
+                p{
+                    color: @aColor;
+                }
+
+                h4{
+                    margin: 0 0 2% 0;
+                }
+
+            }//end teamText
+        }//end teamMember
+    }//end teamCont
+}//end team
