@@ -68,7 +68,6 @@
 
     p{
         width: 60%;
-        // background-color: gray;
         padding: 2%;
         border: 1px solid @green3;
         border-radius: 5px;
@@ -96,7 +95,9 @@
         .choice1{
             .dFlex(row, space-between, center);
             width: 100%;
-            margin: 0 0 10% 0;
+            padding: 5% 0;
+            border-bottom: 1px solid #ddd;
+            border-top: 1px solid #ddd;
 
             @media @tablet{
                 .dFlex(column, space-between, center);
@@ -107,7 +108,7 @@
         .choice2{
             .dFlex(row-reverse, space-between, center);
             width: 100%;
-            margin: 0 0 10% 0;
+            padding: 7% 0;
 
             @media @tablet{
                 .dFlex(column, space-between, center);
@@ -175,7 +176,7 @@
     h3{
         width: 100%;
         text-align: center;
-        margin: 0 0 5% 0;
+        padding: 0 0 5% 0;
         color: @pColor;
 
         @media @mobile{
@@ -206,13 +207,15 @@
     border-bottom: 2px dashed @green3;
 
     h3{
-        width: 100%;
+        width: 70%;
         text-align: center;
-        margin: 0 0 5% 0;
+        margin: 0 auto 5% auto;
+        padding-bottom: 5%;
+        border-bottom: 1px solid #eee;
         color: @green1;
 
         @media @mobile{
-            margin: 0 0 10% 0;
+            margin: 0 auto 10% auto;
         }
     }
 

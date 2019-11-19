@@ -424,7 +424,9 @@ header nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 0 10% 0;
+  padding: 5% 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 @media (max-width: 800px) {
   .howItWorks .choices .choice1 {
@@ -440,7 +442,7 @@ header nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 0 10% 0;
+  padding: 7% 0;
 }
 @media (max-width: 800px) {
   .howItWorks .choices .choice2 {
@@ -506,7 +508,7 @@ header nav ul li a:hover {
 .about h3 {
   width: 100%;
   text-align: center;
-  margin: 0 0 5% 0;
+  padding: 0 0 5% 0;
   color: #eee;
 }
 @media (max-width: 500px) {
@@ -530,14 +532,16 @@ header nav ul li a:hover {
   border-bottom: 2px dashed #AEAE70;
 }
 .team h3 {
-  width: 100%;
+  width: 70%;
   text-align: center;
-  margin: 0 0 5% 0;
+  margin: 0 auto 5% auto;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #eee;
   color: #4E6A5B;
 }
 @media (max-width: 500px) {
   .team h3 {
-    margin: 0 0 10% 0;
+    margin: 0 auto 10% auto;
   }
 }
 .team .teamCont {
