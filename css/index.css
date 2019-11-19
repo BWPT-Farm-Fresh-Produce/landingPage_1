@@ -194,8 +194,8 @@ header {
 }
 @media (max-width: 500px) {
   header {
-    padding: 2% 0 3% 0;
-    height: 23%;
+    padding: 5% 0 0 0;
+    height: 35%;
   }
 }
 header nav {
@@ -209,13 +209,9 @@ header nav {
 @media (max-width: 800px) {
   header nav {
     width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  header nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 }
@@ -237,35 +233,31 @@ header nav a:hover {
   opacity: 0.8;
 }
 header nav ul {
-  width: 30%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 800px) {
   header nav ul {
-    width: 40%;
-  }
-}
-@media (max-width: 600px) {
-  header nav ul {
+    padding-top: 1%;
     width: 70%;
   }
 }
 @media (max-width: 500px) {
   header nav ul {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
-}
-header nav ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
 }
 @media (max-width: 500px) {
   header nav ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    margin-bottom: 2%;
   }
 }
 header nav ul li a {
@@ -346,7 +338,7 @@ header nav ul li a:hover {
   color: white;
   font-size: 2rem;
   display: block;
-  width: 15%;
+  width: 18%;
   text-align: center;
   opacity: 0.8;
 }
@@ -497,13 +489,8 @@ header nav ul li a:hover {
   background-image: url(../assets/images/aboutImage.jpg);
   background-position: top;
   background-size: cover;
-  padding: 5% 0;
+  padding: 5% 0 0 0;
   border-bottom: 2px dashed #AEAE70;
-}
-@media (max-width: 500px) {
-  .about {
-    margin-top: 5%;
-  }
 }
 .about h3 {
   width: 100%;

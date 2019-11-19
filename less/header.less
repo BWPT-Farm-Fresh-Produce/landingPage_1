@@ -8,8 +8,8 @@ header{
     background-color: @headerColor;
 
     @media @mobile{
-        padding: 2% 0 3% 0;
-        height: 23%;
+        padding: 5% 0 0 0;
+        height: 35%;
     }
 
     nav{
@@ -19,10 +19,7 @@ header{
 
         @media @tablet{
             width: 100%;
-        }
-
-        @media @600{
-            .dFlex(column, space-between, center);
+            .dFlex(column, space-around, center);
         }
 
         @media @mobile{
@@ -43,25 +40,24 @@ header{
         }
 
         ul{
-            width: 30%;
+            width: 50%;
+            .dFlex(row, space-around, center);
 
             @media @tablet{
-                width: 40%;
-            }
-
-            @media @600{
+                padding-top: 1%;
                 width: 70%;
             }
 
             @media @mobile{
                 width: 100%;
+                .dFlex(column, space-around, center);
             }
 
             li{
-                .dFlex(row, space-around, center);
 
                 @media @mobile{
-                    .dFlex(column, center, center); 
+                    width: 100%;
+                    margin-bottom: 2%;
                 }
     
                 a{
