@@ -485,6 +485,64 @@ header nav ul li a:hover {
   background-color: gray;
   color: #eee;
 }
+.contact {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+.contact h4 {
+  margin: 0 0 2% 0;
+}
+.contact form {
+  width: 60%;
+  color: #eee;
+}
+@media (max-width: 800px) {
+  .contact form {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .contact form {
+    width: 100%;
+  }
+}
+.contact form input {
+  width: 100%;
+  padding: 1%;
+  margin: 0 0 2% 0;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.contact form input[type=submit] {
+  font-size: 2rem;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.contact form input[type=submit]:hover {
+  background-color: #eee;
+  color: #777;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.contact form textArea {
+  width: 100%;
+  padding: 1%;
+  margin: 0 0 2% 0;
+  font-size: 2rem;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  resize: none;
+}
 .about {
   background-image: url(../assets/images/aboutImage.jpg);
   background-position: top;

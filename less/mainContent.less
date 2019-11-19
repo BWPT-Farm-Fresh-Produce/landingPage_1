@@ -159,6 +159,72 @@
     }//end choices
 }//end howItWorks
 
+// /////////////////// contact //////////////////////////
+
+.contact{
+
+    width: 100%;
+    text-align: center;
+    .dFlex(column, center, center);
+    padding: 5% 0;
+
+    h4{
+        margin: 0 0 2% 0;
+    }
+
+    form{
+        width: 60%;
+        color: @pColor;
+
+        @media @tablet{
+            width: 80%;
+        }
+
+        @media @mobile{
+            width: 100%;
+        }
+
+        input{
+            width: 100%;
+            padding: 1%;
+            margin: 0 0 2% 0;
+            font-size: @aSize;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        input[type= submit]{
+            font-size: @pSize;
+            color: @aColor;
+            appearance: none;
+            -webkit-appearance: none;
+            border-radius: 5px;
+            border: 1px solid #eee;
+
+            &:hover{
+                background-color: #eee;
+                color: #777;
+                opacity: 0.6;
+                cursor: pointer;
+            }
+
+        }// end input type submit
+
+        textArea{
+            width: 100%;
+            padding: 1%;
+            margin: 0 0 2% 0;
+            font-size: @pSize;
+            color: @aColor;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            resize: none;
+        }
+
+    }//end form
+
+}//end contact
+
 // /////////////////// about //////////////////////////
 
 .about{
